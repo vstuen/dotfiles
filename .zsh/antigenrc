@@ -1,0 +1,13 @@
+# Load oh-my-zsh
+antigen use oh-my-zsh
+
+# Load bundles
+antigen bundle git
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+# Theme
+antigen theme robbyrussell
+
+# Done
+antigen apply
+
