@@ -1,9 +1,13 @@
+# Env for default applications
 export VISUAL="vim"
+export EDITOR="vim"
 export BROWSER=chromium.desktop
 
-# golang
-export PATH=$PATH:$(go env GOPATH)/bin
+# Custom user executables
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/scripts
+
+# Golang
 export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:$(/usr/local/go/bin/go env GOPATH)/bin
 
