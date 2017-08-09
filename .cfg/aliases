@@ -23,3 +23,4 @@ alias cal='cal -w'
 
 # Custom aliases for scripts etc.
 alias jsonformat='python -m json.tool'
+alias xevkeys="xev -event keyboard | grep -A2 KeyPress"
