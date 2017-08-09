@@ -203,6 +203,7 @@ bindsym $mod+Ctrl+oslash move workspace to output left
 bindsym $mod+Ctrl+Mod1+h [title="^Google Hangouts"] focus
 bindsym $mod+Ctrl+Mod1+s [class="Spotify" instance="spotify"] focus
 bindsym $mod+Ctrl+Mod1+p [class="Pidgin" window_role="conversation"] focus
+bindsym $mod+Ctrl+Mod1+t [class="Thunderbird" instance="Mail"] focus
 
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
