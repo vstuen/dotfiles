@@ -54,8 +54,8 @@ bindsym $mod+Ctrl+m exec pavucontrol
 bindsym $mod+Scroll_Lock exec playerctl play-pause
 bindsym $mod+Ctrl+Mod1+Prior exec amixer -q sset Master 3%+
 bindsym $mod+Ctrl+Mod1+Next exec amixer -q sset Master 3%-
-bindsym $mod+Ctrl+Scroll_Lock exec playerctl previous
-bindsym $mod+Ctrl+Break exec  playerctl next
+bindsym $mod+Mod1+Scroll_Lock exec playerctl previous
+bindsym $mod+Mod1+Pause exec  playerctl next
 
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
