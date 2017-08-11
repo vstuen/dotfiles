@@ -50,6 +50,13 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 ################################################################################################
 
+# Volume control bindings
+bindsym $mod+Scroll_Lock exec playerctl play-pause
+bindsym $mod+Ctrl+Mod1+Prior exec amixer -q sset Master 3%+
+bindsym $mod+Ctrl+Mod1+Next exec amixer -q sset Master 3%-
+bindsym $mod+Mod1+Scroll_Lock exec playerctl previous
+bindsym $mod+Mod1+Pause exec  playerctl next
+
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
 # bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
@@ -191,6 +198,12 @@ bindsym $mod+Shift+0 move container to workspace $ws0; workspace $ws0
 
 # Switch workspace output
 bindsym $mod+Ctrl+oslash move workspace to output left
+
+# Application focus shortcuts
+bindsym $mod+Ctrl+Mod1+h [title="^Google Hangouts"] focus
+bindsym $mod+Ctrl+Mod1+s [class="Spotify" instance="spotify"] focus
+bindsym $mod+Ctrl+Mod1+p [class="Pidgin" window_role="conversation"] focus
+bindsym $mod+Ctrl+Mod1+t [class="Thunderbird" instance="Mail"] focus
 
 # Open applications on specific workspaces
 # assign [class="Thunderbird"] $ws1
