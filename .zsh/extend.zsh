@@ -25,8 +25,9 @@ z() {
 # fasd & fzf open with vim - open best 
 # matched file using `fasd` if given argument, 
 # filter output of `fasd` using `fzf` else
+unalias v 2> /dev/null
 v() {
-    [ $# -gt 0 ] && fasd -f -e ${EDITOR} "$*" && return
+    [ $# -gt 0 ] && fasd -f -e ${VISUAL} "$*" && return
     local file
     file="$(fasd -Rfl "$1" | fzf -1 -0 --no-sort +m)" && vim "${file}" || return 1
 }
