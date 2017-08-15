@@ -51,11 +51,11 @@ bindsym $mod+Ctrl+m exec pavucontrol
 ################################################################################################
 
 # Volume control bindings
-bindsym $mod+Scroll_Lock exec playerctl play-pause
-bindsym $mod+Ctrl+Mod1+Prior exec amixer -q sset Master 3%+
-bindsym $mod+Ctrl+Mod1+Next exec amixer -q sset Master 3%-
-bindsym $mod+Mod1+Scroll_Lock exec playerctl previous
-bindsym $mod+Mod1+Pause exec  playerctl next
+bindsym $mod+Scroll_Lock exec "playerctl play-pause; pkill -RTMIN+12 i3blocks"
+bindsym $mod+Ctrl+Mod1+Prior exec "amixer -q sset Master 3%+; pkill -RTMIN+10 i3blocks"
+bindsym $mod+Ctrl+Mod1+Next exec "amixer -q sset Master 3%-; pkill -RTMIN+10 i3blocks"
+bindsym $mod+Mod1+Scroll_Lock exec "playerctl previous; pkill -RTMIN+12 i3blocks"
+bindsym $mod+Mod1+Pause exec  "playerctl next; pkill -RTMIN+12 i3block"
 
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
@@ -140,6 +140,9 @@ bindsym $mod+Shift+minus move scratchpad
 # Show the next scratchpad window or hide the focused scratchpad window.
 # If there are multiple scratchpad windows, this command cycles through them.
 bindsym $mod+minus scratchpad show
+
+# Show the current window title using xtitle and notify-send
+bindsym $mod+Ctrl+Mod1+space exec "notify-send -t 100 $(xtitle)"
 
 #navigate workspaces next / previous
 bindsym $mod+Ctrl+Right workspace next
@@ -278,16 +281,16 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 5 px or 5 ppt
-        bindsym j resize grow height 5 px or 5 ppt
-        bindsym k resize shrink height 5 px or 5 ppt
-        bindsym l resize grow width 5 px or 5 ppt
+        bindsym h resize shrink width 60 px or 5 ppt
+        bindsym j resize grow height 60 px or 5 ppt
+        bindsym k resize shrink height 60 px or 5 ppt
+        bindsym l resize grow width 60 px or 5 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 120 px or 10 ppt
+        bindsym Down resize grow height 120 px or 10 ppt
+        bindsym Up resize shrink height 120 px or 10 ppt
+        bindsym Right resize grow width 120 px or 10 ppt
 
         # exit resize mode: Enter or Escape
         bindsym Return mode "default"
@@ -372,7 +375,8 @@ set $i3_color17         #0c0c0c
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
-	status_command i3status
+    #status_command i3status
+    status_command i3blocks
 	position bottom
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
