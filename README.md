@@ -4,6 +4,8 @@
 * zsh
 * fzf
 * fasd
+* i3blocks
+* sysstat
 
 #### To install
 ```bash
