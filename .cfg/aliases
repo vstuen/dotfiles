@@ -18,4 +18,10 @@ alias cclip="xclip -selection c"
 alias pclip="xclip -o"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME'
 
+# Calendar format
+alias cal='cal -w'
 
+# Custom aliases for scripts etc.
+alias jsonformat='python -m json.tool'
+alias xevkeys="xev -event keyboard | grep -A2 KeyPress"
+alias top=htop
