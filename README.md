@@ -1,11 +1,13 @@
 ### Dotfiles project
 
 #### Packages that should be installed (arch/manjaro)
-* zsh
-* fzf
-* fasd
-* i3blocks
-* sysstat
+For all aliases to work, all of the packages should be installed
+* zsh (required)
+* fzf (required)
+* fasd (required)
+* i3blocks (required)
+* sysstat (optional, for CPU usage display in i3blocks)
+* xorg-xev (optional, for xevkeys alias)
 
 #### To install
 ```bash
