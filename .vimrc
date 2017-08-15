@@ -36,6 +36,13 @@ set mouse=a " Enable mouse support
 set incsearch " search as characters are entered
 set hlsearch  " highlight matches
 
+"""
+""" vim-plug
+"""
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/vim-easy-align'
+call plug#end()
+
 
 """
 """ Key bindings
@@ -65,8 +72,13 @@ vnoremap $ <nop>
 nnoremap <leader><space> :nohlsearch<CR> " clear search highlight
 nnoremap <leader>l :call ToggleNumber()<CR>
 
-
-
+""" 
+""" EasyAlign plugin
+""" 
+" interactive in visual (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" interactive for motion/text (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 """
 """ Functions
@@ -81,3 +93,4 @@ function! ToggleNumber()
                 set relativenumber
         endif
 endfunc
+
