@@ -1,6 +1,9 @@
 # Auto-complete for hidden files
 setopt globdots
 
+### COLORS
+[[ -f ~/.dir_colors ]] && eval $(dircolors -b .dir_colors)
+
 # fzf integration
 if [[ -d /usr/share/fzf ]]; then
 	source /usr/share/fzf/key-bindings.zsh
