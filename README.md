@@ -56,8 +56,6 @@ Dockerfile:
 ```dockerfile
 FROM dock0/arch:latest
 
-MAINTAINER Vegard Stuen version: 0.1
-
 RUN pacman -Syy && \
     pacman -S --noconfirm zsh fzf fasd awk
 
