@@ -21,6 +21,7 @@ set showcmd        " show command in bottom bar
 set cursorline     " highlight current line
 set wildmenu       " visual autocomplete for command menu
 set showmatch      " highlicht matching braces etc..
+set wrap lbr       " wrapping breaks on words
 
 " Optimizations
 set lazyredraw " redraw only when needed
