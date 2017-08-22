@@ -2,7 +2,7 @@
 setopt globdots
 
 ### COLORS
-[[ -f ~/.dir_colors ]] && eval $(dircolors -b .dir_colors)
+[[ -f ~/.dir_colors ]] && eval $(dircolors -b ~/.dir_colors)
 
 # fzf integration
 if [[ -d /usr/share/fzf ]]; then
@@ -30,7 +30,7 @@ z() {
 # filter output of `fasd` using `fzf` else
 unalias v 2> /dev/null
 v() {
-    [ $# -gt 0 ] && fasd -f -e ${VISUAL} "$*" && return
+    [ $# -gt 0 ] && fasd -f -e ${EDITOR} "$*" && return
     local file
     file="$(fasd -Rfl "$1" | fzf -1 -0 --no-sort +m)" && vim "${file}" || return 1
 }
