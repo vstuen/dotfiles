@@ -11,3 +11,5 @@ export PATH=$PATH:$HOME/scripts
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(/usr/local/go/bin/go env GOPATH)/bin
 
+# Ranger
+export RANGER_LOAD_DEFAULT_RC=FALSE
