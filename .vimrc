@@ -73,6 +73,12 @@ vnoremap $ <nop>
 nnoremap <leader><space> :nohlsearch<CR> " clear search highlight
 nnoremap <leader>l :call ToggleNumber()<CR>
 
+" Remap for split navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 """ 
 """ EasyAlign plugin
 """ 
