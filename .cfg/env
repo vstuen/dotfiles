@@ -7,6 +7,9 @@ export BROWSER=chromium.desktop
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:$HOME/scripts
 
+# Java
+export JAVA_HOME=/usr/lib/jvm/default
+
 # Golang
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:$(/usr/local/go/bin/go env GOPATH)/bin
