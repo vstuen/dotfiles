@@ -206,6 +206,7 @@ bindsym $mod+Ctrl+oslash move workspace to output left
 bindsym $mod+Ctrl+Mod1+h [title="^Google Hangouts"] focus
 bindsym $mod+Ctrl+Mod1+s [class="Spotify" instance="spotify"] focus
 bindsym $mod+Ctrl+Mod1+p [class="Pidgin" window_role="conversation"] focus
+bindsym $mod+Ctrl+Shift+Mod1+p [class="Pidgin" window_role="buddy_list"] focus
 bindsym $mod+Ctrl+Mod1+t [class="Thunderbird" instance="Mail"] focus
 
 # Open applications on specific workspaces
@@ -223,6 +224,7 @@ for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
 for_window [class="Steam"] floating enable border pixel 1
 for_window [class="com-intellij-updater-Runner"] floating enable border pixel 1
+for_window [class="jetbrains-idea" title="History for Selection"] floating enable border pixel 1
 # for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
