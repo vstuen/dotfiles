@@ -37,6 +37,10 @@ set mouse=a " Enable mouse support
 set incsearch " search as characters are entered
 set hlsearch  " highlight matches
 
+" Split behavior
+set splitbelow
+set splitright
+
 """
 """ vim-plug
 """
