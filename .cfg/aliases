@@ -24,5 +24,6 @@ alias cal='cal -w'
 
 # Custom aliases for scripts etc.
 alias jsonformat='python -m json.tool'
+alias xmlformat='xmllint --format -'
 alias xevkeys="xev -event keyboard | grep -A2 KeyPress"
 alias top=htop
