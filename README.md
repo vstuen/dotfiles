@@ -8,6 +8,7 @@ For all aliases to work, all of the packages should be installed
 * i3blocks (required)
 * sysstat (optional, for CPU usage display in i3blocks)
 * xorg-xev (optional, for xevkeys alias)
+* jq (optional, for jsonformat alias)
 
 #### To install 
 ##### Using https git repo, read-only
