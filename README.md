@@ -11,6 +11,10 @@ For all aliases to work, all of the packages should be installed
 * xorg-xev (optional, for xevkeys alias)
 * jq (optional, for jsonformat alias)
 
+#### Recommended packages
+* mons (for multi monitor setup)
+* atool (great archiving tool)
+
 #### To install 
 ##### Using https git repo, read-only
 ```bash
