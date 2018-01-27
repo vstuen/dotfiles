@@ -11,8 +11,8 @@ export PATH=$PATH:$HOME/scripts
 export JAVA_HOME=/usr/lib/jvm/default
 
 # Golang
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$(/usr/local/go/bin/go env GOPATH)/bin
+# export PATH=$PATH:/usr/local/go/bin
+# export PATH=$PATH:$(/usr/local/go/bin/go env GOPATH)/bin
 
 # Ranger
 export RANGER_LOAD_DEFAULT_RC=FALSE

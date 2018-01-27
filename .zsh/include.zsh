@@ -1,6 +1,6 @@
 ## For use with antigen
-source $HOME/.zsh/antigen.zsh
-source $HOME/.zsh/antigenrc
+# source $HOME/.zsh/antigen.zsh
+# source $HOME/.zsh/antigenrc
 
 ## For use with zgen
 # source $HOME/.zgen/zgen.zsh
