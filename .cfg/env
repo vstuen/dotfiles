@@ -10,10 +10,18 @@ export PATH=$PATH:$HOME/scripts
 # Java
 export JAVA_HOME=/usr/lib/jvm/default
 
-# Golang
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:$(/usr/local/go/bin/go env GOPATH)/bin
+# Golango
+if go version > /dev/null; then
+        export PATH=$PATH:$(go env GOROOT)/bin
+        export PATH=$PATH:$(go env GOPATH)/bin
+elif [[ -f /usr/local/go/bin/go ]]; then;
+        export PATH=$PATH:/usr/local/go/bin
+        export PATH=$PATH:$(/usr/local/go/bin/go env GOPATH)/bin
+fi
 
 # Ranger
 export RANGER_LOAD_DEFAULT_RC=FALSE
-PATH=$PATH:~/.platformio/penv/bin
+
+if [[ -d .platformio/penf/bin ]]; then
+        PATH=$PATH:~/.platformio/penv/bin
+fi
