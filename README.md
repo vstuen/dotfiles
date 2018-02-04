@@ -9,7 +9,8 @@ For all aliases to work, all of the packages should be installed
 * rofi (optional, provides applications menu)
 * sysstat (optional, for CPU usage display in i3blocks)
 * xorg-xev (optional, for xevkeys alias)
-* jq (optional, for jsonformat alias)
+* jq (optional, for `jsonformat` alias, also very handy as a json processor)
+* xclip (optional, for `clipcopy` and `clippaste` aliases)
 
 #### Recommended packages
 * mons (for multi monitor setup)
