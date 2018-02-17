@@ -51,11 +51,16 @@ bindsym $mod+Ctrl+m exec pavucontrol
 ################################################################################################
 
 # Volume control bindings
+bindsym XF86AudioPlay exec "playerctl play-pause; pkill -RTMIN+12 i3blocks"
+bindsym XF86AudioPrev exec "playerctl previous; pkill -RTMIN+12 i3blocks"
+bindsym XF86AudioNext exec  "playerctl next; pkill -RTMIN+12 i3block"
+
 bindsym $mod+Scroll_Lock exec "playerctl play-pause; pkill -RTMIN+12 i3blocks"
-bindsym $mod+Ctrl+Mod1+Prior exec "amixer -q sset Master 3%+; pkill -RTMIN+10 i3blocks"
-bindsym $mod+Ctrl+Mod1+Next exec "amixer -q sset Master 3%-; pkill -RTMIN+10 i3blocks"
 bindsym $mod+Mod1+Scroll_Lock exec "playerctl previous; pkill -RTMIN+12 i3blocks"
 bindsym $mod+Mod1+Pause exec  "playerctl next; pkill -RTMIN+12 i3block"
+
+bindsym $mod+Ctrl+Mod1+Prior exec "amixer -q sset Master 3%+; pkill -RTMIN+10 i3blocks"
+bindsym $mod+Ctrl+Mod1+Next exec "amixer -q sset Master 3%-; pkill -RTMIN+10 i3blocks"
 
 # Screen brightness controls
 # bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
@@ -225,7 +230,8 @@ for_window [class="GParted"] floating enable border normal
 for_window [class="Steam"] floating enable border pixel 1
 for_window [class="com-intellij-updater-Runner"] floating enable border pixel 1
 for_window [class="jetbrains-idea" title="History for Selection"] floating enable border pixel 1
-# for_window [title="i3_help"] floating enable sticky enable border normal
+for_window [title="Android Emulator*"] floating enable border normal
+for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [class="Lightdm-gtk-greeter-settings"] floating enable
 for_window [class="Lxappearance"] floating enable sticky enable border normal
 for_window [class="Manjaro-hello"] floating enable
