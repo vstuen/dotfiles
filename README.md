@@ -57,6 +57,7 @@ config config --local status.showUntrackedFiles no
 
 #### Caps / Escape (No longer in use)
 `~/.Xmodmap` swaps Caps Lock with Escape. It should be sourced automatically by lightdm. If not, source it in `.xinitrc`
+
 *Note*: this behavior is commented out, to enable remove the `!` prefixes on each line 
 
 #### Test with docker
