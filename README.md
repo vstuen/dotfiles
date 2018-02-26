@@ -53,6 +53,7 @@ config config --local status.showUntrackedFiles no
 `~/.Xmodmap` swaps Caps Lock with Escape. It should be sourced automatically by lightdm. If not, source it in `.xinitrc`
 
 #### Test with docker
+_Expect some warnings or errors since not all software is installed (e.g. Go programming language)_
 Dockerfile:
 ```dockerfile
 FROM dock0/arch:latest
