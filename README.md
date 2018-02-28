@@ -11,6 +11,7 @@ For all aliases to work, all of the packages should be installed
 * xorg-xev (optional, for xevkeys alias)
 * jq (optional, for `jsonformat` alias, also very handy as a json processor)
 * xclip (optional, for `clipcopy` and `clippaste` aliases)
+* xorg-xwininfo (for i3-get-window-criteria script)
 
 #### Recommended packages
 * mons (for multi monitor setup)
