@@ -10,10 +10,12 @@ export PATH=$PATH:$HOME/scripts
 # Java
 export JAVA_HOME=/usr/lib/jvm/default
 
-# Golango
+# Golang
 if go version > /dev/null; then
-        export PATH=$PATH:$(go env GOROOT)/bin
-        export PATH=$PATH:$(go env GOPATH)/bin
+        export GOROOT=$(go env GOROOT)
+        export GOPATH=$(go env GOPATH)
+        export PATH=$PATH:$GOROOT/bin
+        export PATH=$PATH:$GOPATH/bin
 elif [[ -f /usr/local/go/bin/go ]]; then;
         export PATH=$PATH:/usr/local/go/bin
         export PATH=$PATH:$(/usr/local/go/bin/go env GOPATH)/bin
