@@ -28,3 +28,4 @@ alias xmlformat='xmllint --format -'
 alias xevkeys="xev -event keyboard | grep -A2 KeyPress"
 alias top=htop
 alias xdgo='xdg-open'
+alias lns='ln -s'
