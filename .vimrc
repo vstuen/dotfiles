@@ -4,7 +4,7 @@
 
 " Colors
 syntax enable
-colorscheme badwolf
+" colorscheme badwolf
 
 " Formatting
 set tabstop=4     " number of visual spaces per TAB
