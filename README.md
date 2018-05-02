@@ -5,7 +5,11 @@ For all aliases to work, all of the packages should be installed
 * zsh (required)
 * fzf (required)
 * fasd (required)
-* jq (optional, for jsonformat alias)
+* rofi (optional, provides applications menu)
+* sysstat (optional, for CPU usage display in i3blocks)
+* xorg-xev (optional, for xevkeys alias)
+* jq (optional, for `jsonformat` alias, also very handy as a json processor)
+* xclip (optional, for `clipcopy` and `clippaste` aliases)
 
 #### Recommended packages
 * atool (great archiving tool)
@@ -49,8 +53,10 @@ config config --local status.showUntrackedFiles no
 
 ```
 
-#### Caps / Escape
+#### Caps / Escape (No longer in use)
 `~/.Xmodmap` swaps Caps Lock with Escape. It should be sourced automatically by lightdm. If not, source it in `.xinitrc`
+
+*Note*: this behavior is commented out, to enable remove the `!` prefixes on each line 
 
 #### Test with docker
 _Expect some warnings or errors since not all software is installed (e.g. Go programming language)_
