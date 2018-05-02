@@ -5,7 +5,7 @@ For all aliases to work, all of the packages should be installed
 * zsh (required)
 * fzf (required)
 * fasd (required)
-* i3blocks (required)
+* i3blocks (required when using i3)
 * rofi (optional, provides applications menu)
 * sysstat (optional, for CPU usage display in i3blocks)
 * xorg-xev (optional, for xevkeys alias)
