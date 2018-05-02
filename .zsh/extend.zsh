@@ -13,24 +13,24 @@ fi
 
 ### FASD
 # fasd init
-eval "$(fasd --init auto)"
+# eval "$(fasd --init auto)"
 
 # fasd & fzf change directory - jump using 
 # `fasd` if given argument, 
 # filter output of `fasd` using `fzf` else
-unalias z 2> /dev/null
-z() {
-    [ $# -gt 0 ] && fasd_cd -d "$*" && return
-    local dir
-    dir="$(fasd -Rdl "$1" | fzf -1 -0 --no-sort +m)" && cd "${dir}" || return 1
-}
+# unalias z 2> /dev/null
+# z() {
+    # [ $# -gt 0 ] && fasd_cd -d "$*" && return
+    # local dir
+    # dir="$(fasd -Rdl "$1" | fzf -1 -0 --no-sort +m)" && cd "${dir}" || return 1
+# }
 
 # fasd & fzf open with vim - open best 
 # matched file using `fasd` if given argument, 
 # filter output of `fasd` using `fzf` else
-unalias v 2> /dev/null
-v() {
-    [ $# -gt 0 ] && fasd -f -e ${EDITOR} "$*" && return
-    local file
-    file="$(fasd -Rfl "$1" | fzf -1 -0 --no-sort +m)" && vim "${file}" || return 1
-}
+# unalias v 2> /dev/null
+# v() {
+    # [ $# -gt 0 ] && fasd -f -e ${EDITOR} "$*" && return
+    # local file
+    # file="$(fasd -Rfl "$1" | fzf -1 -0 --no-sort +m)" && vim "${file}" || return 1
+# }
