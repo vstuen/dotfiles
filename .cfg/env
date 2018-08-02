@@ -27,3 +27,7 @@ export RANGER_LOAD_DEFAULT_RC=FALSE
 if [[ -d .platformio/penf/bin ]]; then
         PATH=$PATH:~/.platformio/penv/bin
 fi
+
+
+# GRML 
+export NOCOR=1 # disables the "correct xzy to xyz" prompt
